@@ -1,0 +1,54 @@
+/* 기본 스타일 */
+body { font-family: 'Malgun Gothic', sans-serif; margin: 20px; background-color: #f4f4f4; }
+h2 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+
+/* 상단 입력 폼 영역 */
+.info-panel { background: #fff; padding: 15px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 15px; }
+.info-group { display: flex; flex-direction: column; width: calc(25% - 15px); }
+.info-group.wide { width: calc(50% - 15px); }
+.info-group label { font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #555; }
+.info-group input { padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+
+/* 버튼 그룹 */
+.toolbar { margin-bottom: 15px; }
+.btn { padding: 8px 15px; border: none; cursor: pointer; border-radius: 4px; font-size: 13px; margin-right: 5px; color: white; }
+.btn-primary { background-color: #007bff; }
+.btn-success { background-color: #28a745; }
+.btn-danger { background-color: #dc3545; }
+.btn-info { background-color: #17a2b8; }
+.btn-warning { background-color: #ffc107; color: black; }
+.btn-secondary { background-color: #6c757d; }
+
+/* 테이블 스타일 */
+.estimate-table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); table-layout: fixed; }
+.estimate-table th, .estimate-table td { border: 1px solid #ddd; padding: 6px; text-align: center; font-size: 13px; word-break: break-all; }
+.estimate-table th { background-color: #eee; font-weight: bold; }
+
+/* 입력 필드 스타일 */
+input[type="text"], input[type="number"], textarea { width: 95%; padding: 4px; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box; resize: none; }
+input[readonly] { background-color: #f9f9f9; color: #555; border: 1px solid #eee; }
+
+/* 메인/서브 항목 구분 */
+.main-row { background-color: #fff; }
+.sub-row { background-color: #fcfcfc; }
+.sub-row td { border-top: none; text-align: left; }
+.sub-content { padding: 10px 20px; border-left: 4px solid #007bff; background: #f8f9fa; margin: 5px 0; }
+
+/* 자재 리스트 테이블 */
+.material-table { width: 100%; margin-top: 5px; border: 1px solid #ccc; background-color: #fff; }
+.material-table th { background-color: #e9ecef; font-size: 12px; padding: 4px; }
+.material-table td { font-size: 12px; padding: 4px; }
+
+/* 레이어 팝업 (Modal) */
+.modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); }
+.modal-content { background-color: #fefefe; margin: 10% auto; padding: 20px; border: 1px solid #888; width: 450px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); position: relative; }
+.close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+.close:hover { color: black; }
+
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; margin-bottom: 4px; font-weight: bold; font-size: 13px; }
+.form-group input, .form-group select { width: 100%; padding: 6px; box-sizing: border-box; }
+
+/* 경고 팝업 스타일 */
+.alert-content { width: 300px; text-align: center; }
+.alert-msg { margin: 20px 0; color: #d9534f; font-weight: bold; }
