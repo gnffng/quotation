@@ -632,7 +632,7 @@ function calcDynamicPrice() {
     
     if (currentItemType === 'WOOD') {
         // [요구사항 1] 가로 * 세로 * 330.75 * 단가
-        finalPrice = w * h * 330.75 * currentBasePrice;
+        finalPrice = (w+0.005) * (h+0.005) * 300 * currentBasePrice;
     } else if (currentItemType === 'GLASS') {
         // [요구사항 2] 가로 * 세로 * 단가 / 0.09
         finalPrice = (w * h * currentBasePrice) / 0.09;
